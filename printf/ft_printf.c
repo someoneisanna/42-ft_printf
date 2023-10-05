@@ -6,14 +6,14 @@
 /*   By: ataboada <ataboada@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/14 11:54:38 by ataboada          #+#    #+#             */
-/*   Updated: 2023/05/19 13:10:21 by ataboada         ###   ########.fr       */
+/*   Updated: 2023/10/05 20:37:06 by ataboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-//#include <stdio.h>
-//#include <limits.h>
+// #include <stdio.h>
+// #include <limits.h>
 
 int			ft_printf(const char *data, ...);
 static char	ft_is_type(char c);
@@ -24,8 +24,6 @@ int main(void)
 {
 	int i1 = INT_MIN;
 	int i2 = INT_MAX;
-	long l1 = LONG_MAX;
-	long l2 = LONG_MIN;
 	unsigned int u1= UINT_MAX;
 	unsigned int u2= 444;
 	char c1 = '1';

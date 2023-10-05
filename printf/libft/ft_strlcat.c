@@ -3,31 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ataboada <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ataboada <ataboada@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 19:00:17 by ataboada          #+#    #+#             */
-/*   Updated: 2023/05/08 19:00:18 by ataboada         ###   ########.fr       */
+/*   Updated: 2023/10/05 19:59:41 by ataboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-#include <stdio.h>
-#include <string.h>
-
-size_t ft_strlcat (char *dest, const char *src, size_t size);
-
-int main(void)
-{
-    char *s = "there";
-    char d[100] = "hey ";
-
-    printf("%li\n", ft_strlcat(d, s, 13));
-    printf("%s\n", d);
-}
-*/
-
+/**
+ * @brief Appends the NULL-terminated string src to the end of dst. It will
+ * append at most size - strlen(dst) - 1 bytes, NULL-terminating the result.
+ * @param dest The string to append to.
+ * @param src The string to be appended.
+ * @param size The size of the destination buffer.
+ * @return The total length of the string they tried to create.
+ */
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	i;
@@ -53,3 +45,17 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[d + i] = '\0';
 	return (t);
 }
+
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+	char *s = "there";
+	char d[100] = "hey ";
+
+	printf("%li\n", ft_strlcat(d, s, 13));
+	printf("%s\n", d);
+}
+*/

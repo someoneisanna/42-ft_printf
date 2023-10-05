@@ -1,9 +1,14 @@
+# ---------------------------------- VARIABLES ---------------------------------
+
 NAME = libftprintf.a
+
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
+
 RM = rm -f
 AR = ar -rcs
 MAKE = make -C
+
 LIBFT_DIR = libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
@@ -12,7 +17,7 @@ SRCS = ft_print_c.c ft_print_n.c ft_print_p.c ft_print_s.c \
 
 S_OBJS = $(SRCS:.c=.o)
 
-.PHONY: all clean fclean re
+# ------------------------------------ RULES -----------------------------------
 
 all: $(NAME)
 
@@ -33,3 +38,5 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
